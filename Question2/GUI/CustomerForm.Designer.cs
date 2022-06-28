@@ -58,7 +58,7 @@
             // 
             this.textBoxCustomerId.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxCustomerId.Location = new System.Drawing.Point(28, 55);
-            this.textBoxCustomerId.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxCustomerId.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxCustomerId.Name = "textBoxCustomerId";
             this.textBoxCustomerId.Size = new System.Drawing.Size(165, 24);
             this.textBoxCustomerId.TabIndex = 1;
@@ -78,8 +78,8 @@
             // maskedTextBoxPhoneNumber
             // 
             this.maskedTextBoxPhoneNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBoxPhoneNumber.Location = new System.Drawing.Point(275, 117);
-            this.maskedTextBoxPhoneNumber.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.maskedTextBoxPhoneNumber.Location = new System.Drawing.Point(259, 117);
+            this.maskedTextBoxPhoneNumber.Margin = new System.Windows.Forms.Padding(4);
             this.maskedTextBoxPhoneNumber.Mask = "(999) 000-0000";
             this.maskedTextBoxPhoneNumber.Name = "maskedTextBoxPhoneNumber";
             this.maskedTextBoxPhoneNumber.Size = new System.Drawing.Size(140, 24);
@@ -96,7 +96,7 @@
             this.listViewCustomer.GridLines = true;
             this.listViewCustomer.HideSelection = false;
             this.listViewCustomer.Location = new System.Drawing.Point(16, 305);
-            this.listViewCustomer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listViewCustomer.Margin = new System.Windows.Forms.Padding(4);
             this.listViewCustomer.Name = "listViewCustomer";
             this.listViewCustomer.Size = new System.Drawing.Size(803, 118);
             this.listViewCustomer.TabIndex = 3;
@@ -127,7 +127,7 @@
             // 
             this.buttonAddToList.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonAddToList.Location = new System.Drawing.Point(489, 41);
-            this.buttonAddToList.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonAddToList.Margin = new System.Windows.Forms.Padding(4);
             this.buttonAddToList.Name = "buttonAddToList";
             this.buttonAddToList.Size = new System.Drawing.Size(161, 54);
             this.buttonAddToList.TabIndex = 5;
@@ -139,7 +139,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(275, 36);
+            this.label2.Location = new System.Drawing.Point(259, 36);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(91, 18);
@@ -149,8 +149,8 @@
             // textBoxFirstName
             // 
             this.textBoxFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxFirstName.Location = new System.Drawing.Point(275, 55);
-            this.textBoxFirstName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxFirstName.Location = new System.Drawing.Point(259, 55);
+            this.textBoxFirstName.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxFirstName.Name = "textBoxFirstName";
             this.textBoxFirstName.Size = new System.Drawing.Size(140, 24);
             this.textBoxFirstName.TabIndex = 2;
@@ -170,7 +170,7 @@
             // 
             this.textBoxLastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxLastName.Location = new System.Drawing.Point(28, 117);
-            this.textBoxLastName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxLastName.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxLastName.Name = "textBoxLastName";
             this.textBoxLastName.Size = new System.Drawing.Size(165, 24);
             this.textBoxLastName.TabIndex = 3;
@@ -179,7 +179,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(275, 95);
+            this.label4.Location = new System.Drawing.Point(259, 95);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(120, 18);
@@ -190,7 +190,7 @@
             // 
             this.buttonListCustomers.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonListCustomers.Location = new System.Drawing.Point(489, 117);
-            this.buttonListCustomers.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonListCustomers.Margin = new System.Windows.Forms.Padding(4);
             this.buttonListCustomers.Name = "buttonListCustomers";
             this.buttonListCustomers.Size = new System.Drawing.Size(161, 54);
             this.buttonListCustomers.TabIndex = 6;
@@ -202,7 +202,7 @@
             // 
             this.buttonExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonExit.Location = new System.Drawing.Point(719, 445);
-            this.buttonExit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonExit.Margin = new System.Windows.Forms.Padding(4);
             this.buttonExit.Name = "buttonExit";
             this.buttonExit.Size = new System.Drawing.Size(100, 28);
             this.buttonExit.TabIndex = 7;
@@ -214,7 +214,7 @@
             // 
             this.buttonSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonSave.Location = new System.Drawing.Point(659, 41);
-            this.buttonSave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonSave.Margin = new System.Windows.Forms.Padding(4);
             this.buttonSave.Name = "buttonSave";
             this.buttonSave.Size = new System.Drawing.Size(161, 54);
             this.buttonSave.TabIndex = 11;
@@ -226,7 +226,7 @@
             // 
             this.buttonUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonUpdate.Location = new System.Drawing.Point(659, 117);
-            this.buttonUpdate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonUpdate.Margin = new System.Windows.Forms.Padding(4);
             this.buttonUpdate.Name = "buttonUpdate";
             this.buttonUpdate.Size = new System.Drawing.Size(161, 54);
             this.buttonUpdate.TabIndex = 12;
@@ -238,7 +238,7 @@
             // 
             this.buttonDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonDelete.Location = new System.Drawing.Point(576, 185);
-            this.buttonDelete.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonDelete.Margin = new System.Windows.Forms.Padding(4);
             this.buttonDelete.Name = "buttonDelete";
             this.buttonDelete.Size = new System.Drawing.Size(161, 48);
             this.buttonDelete.TabIndex = 13;
@@ -255,7 +255,7 @@
             "First Name",
             "Last Name"});
             this.comboBoxChoice.Location = new System.Drawing.Point(28, 185);
-            this.comboBoxChoice.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBoxChoice.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxChoice.Name = "comboBoxChoice";
             this.comboBoxChoice.Size = new System.Drawing.Size(165, 24);
             this.comboBoxChoice.TabIndex = 14;
@@ -264,8 +264,8 @@
             // buttonSearch
             // 
             this.buttonSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonSearch.Location = new System.Drawing.Point(259, 241);
-            this.buttonSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonSearch.Location = new System.Drawing.Point(243, 258);
+            this.buttonSearch.Margin = new System.Windows.Forms.Padding(4);
             this.buttonSearch.Name = "buttonSearch";
             this.buttonSearch.Size = new System.Drawing.Size(136, 39);
             this.buttonSearch.TabIndex = 15;
@@ -288,7 +288,7 @@
             // 
             this.textBoxInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxInput.Location = new System.Drawing.Point(28, 256);
-            this.textBoxInput.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxInput.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxInput.Name = "textBoxInput";
             this.textBoxInput.Size = new System.Drawing.Size(165, 24);
             this.textBoxInput.TabIndex = 17;
@@ -332,7 +332,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBoxCustomerId);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "CustomerForm";
             this.Text = "Customer Information";
             this.Load += new System.EventHandler(this.CustomerForm_Load);

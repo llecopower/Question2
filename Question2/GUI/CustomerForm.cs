@@ -66,7 +66,32 @@ namespace Question2.GUI
 
         private void comboBoxChoice_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+           int choice = comboBoxChoice.SelectedIndex;
+
+            switch (choice)
+            { 
+                case 0:
+                    labelInfo.Text = "Please enter the Customer ID";
+                    textBoxInput.Focus();
+                    break;
+
+                case 1:
+                    labelInfo.Text = "Please enter the First Name";
+                    textBoxInput.Focus();
+                    break;
+
+                case 2:
+                    labelInfo.Text = "Please enter the Last Name";
+                    textBoxInput.Focus();
+                    break;
+
+                    default:
+                    break;
+
+
+
+            }
+
 
         }
 
@@ -80,6 +105,9 @@ namespace Question2.GUI
                        
         }
 
+        private void comboBoxExample_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
+        }
     }
 }
