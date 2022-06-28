@@ -82,7 +82,72 @@ namespace Question2.DAL
         }
 
 
+        public static Customer Search(int custId)
+        {
 
-       
+            Customer cust = new Customer();
+            StreamReader sReader = new StreamReader(filePath);
+            string line = sReader.ReadLine();
+
+            while (line != null)
+            {   
+                string[] fields = line.Split(',');
+
+
+                if (custId == Convert.ToInt32(fields[0]))
+                {
+                    cust.CustomerId = Convert.ToInt32(fields[0]);
+                    cust.FirstName = fields[1];
+                    cust.LastName = fields[2];
+                    cust.PhoneNumber = fields[3];
+                    sReader.Close();
+                    return cust;
+                }
+                line = sReader.ReadLine();
+            }
+            sReader.Close();
+            return null;
+        }
+
+
+
+
+        public static void Delete(int custId)
+        {
+            StreamReader sReader = new StreamReader(filePath);
+            string line = sReader.ReadLine();
+            StreamWriter sWriter = new StreamWriter(fileTemp, true);
+
+            while (line != null)
+            {
+                string[] fields = line.Split(',');
+
+                if ((custId) != (Convert.ToInt32(fields[0])))
+                {
+                    sWriter.WriteLine(fields[0] + "," + fields[1] + "," + fields[2] + "," + fields[3]);
+                    //sWriter.WriteLine(line);
+                    //sWriter.WriteLine(fields.ToString());
+                }
+                line=sReader.ReadLine();
+            }
+
+            sReader.Close();
+            sWriter.Close();
+
+            //Delete the "old file" = Custormer.dat
+            File.Delete(filePath);
+            File.Move(fileTemp, filePath);
+
+
+        }
+
+
+
+
+
+
+
+
+
     }
 }
