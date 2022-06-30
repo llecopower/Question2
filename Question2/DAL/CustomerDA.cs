@@ -144,10 +144,32 @@ namespace Question2.DAL
 
 
 
+        public static void Update(Customer cust)
+        {
+            StreamReader sReader = new StreamReader(filePath);
+            StreamWriter sWriter = new StreamWriter(fileTemp, true);
+            string line = sReader.ReadLine();
 
+            while (line != null)
+            {
+                string[] fields = line.Split(',');
 
+                if ((Convert.ToInt32(fields[0])!=(cust.CustomerId)))
+                {
+                    sWriter.WriteLine(fields[0] + "," + fields[1] + "," + fields[2] + "," + fields[3]);
+                    //sWriter.WriteLine(line);
+                    //sWriter.WriteLine(fields.ToString());
+                }
+                line = sReader.ReadLine();
+            }
+            sWriter.WriteLine(cust.CustomerId + "," + cust.FirstName + "," + cust.LastName + ", " + cust.PhoneNumber);
 
+            sReader.Close();
+            sWriter.Close();
 
-
+            //Delete the "old file" = Custormer.dat
+            File.Delete(filePath);
+            File.Move(fileTemp, filePath);
+        }
     }
 }

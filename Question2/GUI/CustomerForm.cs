@@ -16,24 +16,55 @@ namespace Question2.GUI
 {
     public partial class CustomerForm : Form
     {
+        List<Customer> listC = new List<Customer>();
+
+
+
         public CustomerForm()
         {
             InitializeComponent();
+            buttonListCustomers.Enabled = false;
+
         }
 
         private void buttonExit_Click(object sender, EventArgs e)
         {
+            DialogResult asnwer = MessageBox.Show("Are you sure to exit the Application?", "Confirmation",
+                                                   MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (asnwer == DialogResult.Yes)
+            {
+                Application.Exit();
+
+            }
+
             
         }
 
         private void CustomerForm_Load(object sender, EventArgs e)
         {
-           
+           // buttonListCustomers.Enabled = false;
         }
 
         private void buttonAddToList_Click(object sender, EventArgs e)
         {
-            
+            Customer aCustomer = new Customer();
+            if ((Validator.IsValidID(textBoxCustomerId)) && (Validator.IsValidName(textBoxFirstName)) && 
+                (Validator.IsValidName(textBoxLastName)) && Validator.IsUniqueID(listC, Convert.ToInt32(textBoxCustomerId.Text)))
+            {
+               aCustomer.CustomerId = Convert.ToInt32(textBoxCustomerId.Text);
+               aCustomer.FirstName = textBoxFirstName.Text;
+               aCustomer.LastName = textBoxLastName.Text;
+               aCustomer.PhoneNumber = maskedTextBoxPhoneNumber.Text;
+
+                //add to the list
+                listC.Add(aCustomer);
+
+                MessageBox.Show("Custormer Info Has been added to the list", "Confirmation");
+                buttonListCustomers.Enabled = true;
+                //ClearAll();
+
+
+            }
                         
             
         }
