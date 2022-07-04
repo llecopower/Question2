@@ -8,32 +8,36 @@ namespace Question2.BLL
 {
    public class Employee : Person
     {
-       //INHERITANCE FROM PERSON
-        public int EmployeeId { get; set; }
+        //INHERITANCE FROM PERSON
+        private int employeeId;
 
-        //Default Constructor
+        public int EmployeeId
+        {
+            get { return employeeId; }
+            set { employeeId = value; }
+        }
+
+        //Default constructor
+
         public Employee() : base()
         {
-            EmployeeId = 12345;
-        } 
-        
-        //parametrized Constructor
+            employeeId = 12345;
+        }
 
-        public Employee(int empId, string fname, string lname) : base(fname,lname)
+
+        //Parameterized contructor
+
+        public Employee(int empId, string fname, string lname) : base(fname, lname)
         {
-            EmployeeId = empId;
+            employeeId = empId;
+
         }
 
         public override string DisplayInfo()
         {
-            string info = EmployeeId + ", " + base.DisplayInfo();
-
+            string info = employeeId + "," + base.DisplayInfo();
             return info;
         }
-
-
-
-
 
 
 

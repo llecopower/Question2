@@ -6,34 +6,51 @@ using System.Threading.Tasks;
 
 namespace Question2.BLL
 {
-    //base class
+      //base class
     public class Person
     {
+        private string firstName;
+        private string lastName;
 
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-
-               
-        //Default Constructor
-        public Person()
+        public string LastName
         {
-            FirstName = "Bruno";
-            LastName = "Henkels";
+            get { return lastName; }
+            set { lastName = value; }
         }
 
-        //parameterized Constructor (also called overloaded constructor)
+        public string FirstName
+        {
+            get { return firstName; }
+            set { firstName = value; }
+        }
+
+        //Default constructor
+
+        public Person()
+        {
+            firstName = "Mary";
+            lastName = "Brown";
+        }
+
+        // Paramerterized constructor (also called Overloaded constructor
         public Person(string fName, string lName)
-            {
-                FirstName = fName;
-                LastName = lName;
-            }
+        {
+            lastName = lName;
+            firstName = fName;
+
+        }
+        //public Person(string firstName, string lastName)
+        //{
+        //    this.lastName = lastName;
+        //    this.firstName = firstName;
+
+        //}
 
         //Method
         public virtual string DisplayInfo()
-        { 
-            return LastName + ", " + FirstName;
+        {
+            return (firstName + "," + lastName);
         }
-
 
     }
 }
