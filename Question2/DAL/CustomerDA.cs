@@ -9,13 +9,16 @@ using System.IO;
 
 namespace Question2.DAL
 {
+    // HOME WORK
+    //DBA OR QA
+    //1 Validation for not allow empty or NULL data at DB or list
+    //2 Validation to verify if DB exists Before first Save 
 
     //STATIC WILL AVOID TO CREATE INS
     public static class CustomerDA
     {
         private static string filePath = Application.StartupPath + @"\Customers.dat";
         private static string fileTemp = Application.StartupPath + @"\Temp.dat";
-
         public static void Save(Customer cust)
         {
             StreamWriter sWriter = new StreamWriter(filePath, true);
@@ -24,7 +27,6 @@ namespace Question2.DAL
             MessageBox.Show("Customer Data has been saved.");
 
         }
-
         public static void ListCustomers(ListView listViewCustomer)
         {
             //step 1: Create an object of type StreamReader
@@ -48,7 +50,6 @@ namespace Question2.DAL
             }
             sReader.Close();
         }
-
         public static List<Customer> ListCustomers()
         {
             List<Customer> listC = new List<Customer>();
@@ -77,7 +78,6 @@ namespace Question2.DAL
             sReader.Close(); //Close the file
             return listC;
         }
-
         public static Customer Search(int custId)
         {
             Customer cust = new Customer();
@@ -126,7 +126,6 @@ namespace Question2.DAL
             File.Move(fileTemp, filePath);
 
         }
-
         public static void Update(Customer cust)
         {
             StreamReader sReader = new StreamReader(filePath);
